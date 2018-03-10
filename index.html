@@ -10,11 +10,12 @@
 </head>
 <body>
     <div ng-controller="main" class="todo-wrap">
+        <btn-slide></btn-slide>
         <h1>{{title}}</h1>
         <today></today>
         <!-- <delete-todo></delete-todo> -->
-        <add-todo></add-todo>
         <todo-list data="todoList"></todo-list>
+        <add-todo></add-todo>
     </div>
 
     <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
@@ -26,5 +27,7 @@
     <script src="./js/directive/TodoItem.js"></script>
     <script src="./js/directive/addTodo.js"></script>
     <script src="./js/directive/today.js"></script>
+
+    <script src="./js/directive/slide.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-// js中使用驼峰式命名，hmtl中应使用中划线
 app.directive('todoItem', function() {
     return {
         restrict: 'EA',
