@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TODOLIST">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="https://zw9409.github.io/style/css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div ng-controller="main" class="todo-wrap">
+        <h1>{{title}}</h1>
+        <today></today>
+        <!-- <delete-todo></delete-todo> -->
+        <add-todo></add-todo>
+        <todo-list data="todoList"></todo-list>
+    </div>
+
+    <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
+    <script src="./js/libs.js"></script>
+    <script src="./js/app.js"></script>
+
+    <!-- 自定义指令 -->
+    <script src="./js/directive/TodoList.js"></script>
+    <script src="./js/directive/TodoItem.js"></script>
+    <script src="./js/directive/addTodo.js"></script>
+    <script src="./js/directive/today.js"></script>
+</body>
+</html>
